@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Team member" max_length="40" name="x_78492_fball_mgmt_team_member" type="collection">
+        <element label="Joined" max_length="40" name="joined" type="glide_date"/>
+        <element label="Photo" max_length="40" name="photo" type="user_image"/>
+        <element choice="1" label="Preferred position" max_length="40" name="preferred_position" type="choice">
+            <choice/>
+        </element>
+        <element label="Team" max_length="32" name="team" reference="x_78492_fball_mgmt_team" type="reference"/>
+        <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="team"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="syntax_editor_macro">
+    <syntax_editor_macro action="INSERT_OR_UPDATE">
+        <comments>A common pattern of creating and querying a GlideRecord</comments>
+        <name>vargr</name>
+        <sys_class_name>syntax_editor_macro</sys_class_name>
+        <sys_created_by>jloftas</sys_created_by>
+        <sys_created_on>2012-06-28 09:54:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d5a8e74bc13a2000e81509e5945c8f46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>vargr</sys_name>
+        <sys_package display_value="Football Management" source="x_78492_fball_mgmt">4b579d4edb172200e24ff7fdbf9619c2</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Football Management">4b579d4edb172200e24ff7fdbf9619c2</sys_scope>
+        <sys_update_name>syntax_editor_macro_d5a8e74bc13a2000e81509e5945c8f46</sys_update_name>
+        <sys_updated_by>jloftas</sys_updated_by>
+        <sys_updated_on>2012-06-28 09:54:35</sys_updated_on>
+        <text>var gr = new GlideRecord('$0');&#13;
+gr.addQuery('name', 'value');&#13;
+gr.query();&#13;
+if (gr.next()) {&#13;
+   &#13;
+}</text>
+    </syntax_editor_macro>
+</record_update>

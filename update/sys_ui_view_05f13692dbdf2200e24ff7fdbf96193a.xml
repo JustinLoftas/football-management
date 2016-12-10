@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>Football_management</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>jloftas</sys_created_by>
+        <sys_created_on>2016-11-27 11:59:25</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>05f13692dbdf2200e24ff7fdbf96193a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Football management</sys_name>
+        <sys_package display_value="Football Management" source="x_78492_fball_mgmt">4b579d4edb172200e24ff7fdbf9619c2</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Football Management">4b579d4edb172200e24ff7fdbf9619c2</sys_scope>
+        <sys_update_name>sys_ui_view_05f13692dbdf2200e24ff7fdbf96193a</sys_update_name>
+        <sys_updated_by>jloftas</sys_updated_by>
+        <sys_updated_on>2016-11-27 11:59:25</sys_updated_on>
+        <title>Football management</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

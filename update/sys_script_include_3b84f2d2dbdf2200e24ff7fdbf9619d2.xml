@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_78492_fball_mgmt.FootballManagementUtils</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>FootballManagementUtils</name>
+        <script><![CDATA[var FootballManagementUtils = Class.create();
+FootballManagementUtils.prototype = {
+	initialize: function() {
+	},
+	
+	//Function for setting the current age of the user record based on their date of birth and updating it
+	//@user: A single sys_user GlideRecord object of the user to update
+	updateAge: function(user){
+		try {
+			
+			var nowMS = new GlideDateTime().getNumericValue();
+			var yearMS = 1000*60*60*24*365;
+	        var year = 0;
+			var dobMS = 0;
+			var dob = '';
+			
+			if (!user){
+				return user;
+			}
+			dob = user.getValue('x_78492_fball_mgmt_date_of_birth');
+			if (dob == ''){
+				return user;
+			}
+			dobMS = new GlideDateTime(dob).getNumericValue();
+			year = Math.floor((nowMS - dobMS) / yearMS);
+			
+			user.setValue('x_78492_fball_mgmt_age', year);
+			user.update();
+			return user;
+			
+		}
+		catch(err)
+		{
+			//Handle errors here
+			gs.error('Error detected in Script Include x_78492_fball_mgmt.FootballManagementUtils function calculateAge, error message is ' + err.message);
+		}
+		
+	},
+	
+	type: 'FootballManagementUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>jloftas</sys_created_by>
+        <sys_created_on>2016-11-27 12:41:49</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>3b84f2d2dbdf2200e24ff7fdbf9619d2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>FootballManagementUtils</sys_name>
+        <sys_package display_value="Football Management" source="x_78492_fball_mgmt">4b579d4edb172200e24ff7fdbf9619c2</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Football Management">4b579d4edb172200e24ff7fdbf9619c2</sys_scope>
+        <sys_update_name>sys_script_include_3b84f2d2dbdf2200e24ff7fdbf9619d2</sys_update_name>
+        <sys_updated_by>jloftas</sys_updated_by>
+        <sys_updated_on>2016-11-27 12:59:16</sys_updated_on>
+    </sys_script_include>
+</record_update>

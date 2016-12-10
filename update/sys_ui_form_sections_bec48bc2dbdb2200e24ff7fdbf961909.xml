@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="bec48bc2dbdb2200e24ff7fdbf961909" sys_domain="global" table="x_78492_fball_mgmt_team" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>jloftas</sys_created_by>
+            <sys_created_on>2016-11-26 18:43:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>36c48bc2dbdb2200e24ff7fdbf96190a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_78492_fball_mgmt_team" name="x_78492_fball_mgmt_team" sys_domain="global" view="Default view">bec48bc2dbdb2200e24ff7fdbf961909</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_78492_fball_mgmt_team" sys_domain="global" view="Default view">eff347c2dbdb2200e24ff7fdbf96198b</sys_ui_section>
+            <sys_updated_by>jloftas</sys_updated_by>
+            <sys_updated_on>2016-11-26 18:43:14</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_78492_fball_mgmt_team</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>jloftas</sys_created_by>
+            <sys_created_on>2016-11-26 18:43:14</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bec48bc2dbdb2200e24ff7fdbf961909</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_78492_fball_mgmt_team</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Football Management" source="x_78492_fball_mgmt">4b579d4edb172200e24ff7fdbf9619c2</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Football Management">4b579d4edb172200e24ff7fdbf9619c2</sys_scope>
+            <sys_update_name>sys_ui_form_sections_bec48bc2dbdb2200e24ff7fdbf961909</sys_update_name>
+            <sys_updated_by>jloftas</sys_updated_by>
+            <sys_updated_on>2016-11-26 18:43:14</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

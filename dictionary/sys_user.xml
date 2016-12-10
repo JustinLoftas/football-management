@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="ref_ac_columns_search=true,ref_ac_order_by=name,ref_ac_columns=email,display_image=photo,ref_auto_completer=AJAXTableCompleter,iterativeDelete=true,text_index_translations" create_roles="user_admin" defaultsort="-1" dynamic_creation_script="dynamicUserCreation(current, value);" label="User" max_length="40" name="sys_user" text_index="true" type="collection">
+        <element label="Age" max_length="40" name="x_78492_fball_mgmt_age" type="integer"/>
+        <element label="Date of birth" max_length="40" name="x_78492_fball_mgmt_date_of_birth" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="right" label="Foot preference" max_length="40" name="x_78492_fball_mgmt_foot_preference" type="string">
+            <choice>
+                <element label="Right" sequence="0" value="right"/>
+                <element label="Left" sequence="1" value="left"/>
+                <element label="Ambidextrous" sequence="2" value="ambidextrous"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Type" max_length="40" name="x_78492_fball_mgmt_type" type="string">
+            <choice>
+                <element label="Player" sequence="0" value="Player"/>
+                <element label="Manager" sequence="1" value="Manager"/>
+                <element label="Assistant Manager" sequence="2" value="Assistant Manager"/>
+                <element label="Secretary" sequence="3" value="Secretary"/>
+                <element label="Player/Manager" sequence="4" value="Player/Manager"/>
+            </choice>
+        </element>
+    </element>
+</database>

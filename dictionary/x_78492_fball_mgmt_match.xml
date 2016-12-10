@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element attributes="live_feed=true" label="Match" max_length="40" name="x_78492_fball_mgmt_match" type="collection">
+        <element label="Away score" max_length="40" name="away_score" type="integer"/>
+        <element label="Away team" max_length="32" name="away_team" reference="x_78492_fball_mgmt_football_club" type="reference"/>
+        <element label="Competition" max_length="32" name="competition" reference="x_78492_fball_mgmt_competition" type="reference"/>
+        <element attributes="max_unit=minutes" default="javascript: gs.getProperty('football_management.match_duration.default', '0 00:50:00');" label="Duration" max_length="40" name="duration" type="glide_duration"/>
+        <element choice="1" label="Format" max_length="40" name="format" type="choice">
+            <choice>
+                <element label="5-a-side" sequence="0" value="5-a-side"/>
+                <element label="7-a-side" sequence="1" value="7-a-side"/>
+                <element label="9-a-side" sequence="2" value="9-a-side"/>
+            </choice>
+        </element>
+        <element label="Home score" max_length="40" name="home_score" type="integer"/>
+        <element label="Home team" max_length="32" name="home_team" reference="x_78492_fball_mgmt_football_club" type="reference"/>
+        <element label="Kick off" max_length="40" name="kick_off" type="glide_date_time"/>
+        <element display="true" label="Name" max_length="160" name="name" type="string"/>
         <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Pitch" max_length="32" name="pitch" reference="cmn_location" type="reference"/>
+        <element label="Referee" max_length="32" name="referee" reference="sys_user" type="reference"/>
+        <element choice="1" label="Result" max_length="40" name="result" type="choice">
+            <choice/>
+        </element>
+        <index name="index">
+            <element name="competition"/>
+        </index>
+        <index name="index2">
+            <element name="pitch"/>
+        </index>
+        <index name="index3">
+            <element name="home_team"/>
+        </index>
+        <index name="index4">
+            <element name="referee"/>
+        </index>
+        <index name="index5">
+            <element name="away_team"/>
+        </index>
     </element>
 </database>
